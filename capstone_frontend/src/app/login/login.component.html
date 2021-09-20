@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animated Login Form</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="background:url('assets/img/wave2.png') #1e1e2f; background-repeat: no-repeat;">
+    <div></div>
+    <div class="container ">
+
+        <div class="img " style="margin-left: 10px;">
+            <img src="assets/img/stock4.svg ">
+        </div>
+        <div class="login-content ">
+            <form #f="ngForm" (ngSubmit)="onLogin()" class="form-group">
+                <img src="assets/img/propic.svg ">
+                <br>
+                <div class="input-div one ">
+                    <div class="i ">
+                        <i class="fas fa-user "></i>
+                    </div>
+                    <div class="div ">
+
+                        <input type="text " name="username" [(ngModel)]="model.cust_id" class="input " style="color: white; " placeholder="Username " id="user">
+                    </div>
+                </div>
+                <div class="input-div pass ">
+                    <div class="i ">
+                        <i class="fas fa-lock "></i>
+                    </div>
+                    <div class="div ">
+
+                        <input type="password" name="password" [(ngModel)]="model.password" style="color: white; " placeholder="Password " id="pass">
+                    </div>
+                </div>
+                <a href="# ">Forgot Password?</a>
+
+                <input type="submit" value="Login" class="btn">
+                <a href="# ">Don't have an account? Sign up</a>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript " src="js/main.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<div class="logo">
+    <a [routerLink]="['/typography']" routerLinkActive="router-link-active" class="simple-text logo-mini">
+        <div class="logo-img">
+            <img src="./assets/img/stock4.svg" />
+        </div>
+    </a>
+    <a [routerLink]="['/typography']" routerLinkActive="router-link-active" class="simple-text logo-normal">
+    TRADERS BAY
+  </a>
+</div>
+<div class="sidebar-wrapper">
+    <ul class="nav">
+        <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{ menuItem.class }} nav-item">
+            <a [routerLink]="[menuItem.path]">
+                <i class="tim-icons  {{ menuItem.icon }}"></i>
+                <p><b>{{ menuItem.title }}</b></p>
+            </a>
+        </li>
+    </ul>
+</div>

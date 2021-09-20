@@ -1,0 +1,26 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+.my-class .mat-dialog-container {
+    height: 300PX;
+    width: 400px;
+    border-radius: 10px;
+    background: #1e1e2f;
+    color: white;
+    font-weight: bold;
+}
+
+.my-class .mat-dialog-container h1 {
+    color: rgb(233, 231, 101);
+    font-weight: bold;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

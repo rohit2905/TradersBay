@@ -1,0 +1,38 @@
+<div class=" content">
+    <div class=" row" id="bg" style="background-image: url('assets/img/list.svg');
+    background-position: right 10px center ;
+    background-repeat:no-repeat;
+    background-size: 250px 200px;">
+        <div class=" col-md-12">
+            <div class=" card card-plain">
+                <div class=" card-header"></div>
+                <div class=" card-body">
+                    <h1>Welcome,&nbsp;<code>{{custodianid}}</code></h1><br>
+                    <div class="alert alert-warning" role="alert">
+                        <b>My Clients</b>
+                    </div>
+                    <div class=" col-md-9">
+                        <table class="table table-striped table-plain">
+                            <thead>
+                                <tr>
+                                    <th scope="col">CLIENT ID</th>
+                                    <th scope="col">CLIENT NAME</th>
+                                    <th scope="col">TRANSACTION LIMIT</th>
+                                    <th scope="col">AMOUNT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of records">
+                                    <td>{{item.client_id}}&nbsp;</td>
+                                    <td>{{item.client_name}}</td>
+                                    <td>{{item.transaction_limit}}&nbsp;&nbsp;</td>
+                                    <td>{{item.amount}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
